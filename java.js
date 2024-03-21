@@ -15,7 +15,7 @@ searchButton.addEventListener('click', () => {
 });
 
 function fetchWeather(location) {
-    const url = `${'https://api.openweathermap.org/data/2.5/weather'}?q=${location}&appid=${'608bbfcf167396295aad432c92c6ca02'}&units=metric`;
+    const url = `${''}?q=${location}&appid=${''}&units=metric`;
 
     fetch(url)
         .then(response => response.json())
