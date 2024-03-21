@@ -30,7 +30,7 @@
 .logo img {
     width: 180px;
     border-radius: 50px;
-    align:left ;
+    align: left;
 }
 
 .nav-list li {
@@ -53,12 +53,12 @@
 
 
 .firstsection {
-    background-color:pink;
+    background-color: pink;
     height: 400px;
 }
 
 .secondsection {
-    background-color:peru;
+    background-color: peru;
     height: 400px;
 }
 
@@ -121,7 +121,3 @@ footer {
     text-align: center;
     padding: 15px;
 }
-
-
-
-

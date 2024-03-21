@@ -13,15 +13,34 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="xworkz-removebg-preview.png" height="100px" width="100px">
+            </a>
+            <ul class="navbar-nav navbar-collapse">
+                <li class="nav-item">
+                    <a class="nav-link" href="weather app.html">
+                        <p class="h5 font-weight-bold">Weather app</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="container">
+    <div class=" container">
         <h1>Weather App</h1>
         <input type="text" id="locationInput" placeholder="Enter a city">
-        <button id="searchButton">Search</button>
-        <div class="weather-info">
-            <h2 id="location"></h2>
-            <p id="temperature"></p>
-            <p id="description"></p>
+        <button id="searchButton" onclick="fetchWeather()">Search</button>
+        <script src="java.js">
+            fetchWeather()
+        </script>
+    </div>
+    <div class="weather-info card">
+        <div class="card-body">
+            <h2 id="location">location</h2>
+            <h2 id="temperature">temperature</h2>
+            <h2 id="description">description</h2>
         </div>
     </div>
     <script src="script.js"></script>
