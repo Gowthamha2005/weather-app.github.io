@@ -5,6 +5,10 @@ function fetchWeather() {
         document.getElementById("location").innerHTML = data.name
         document.getElementById("temperature").innerHTML = data.main.temp
         document.getElementById("description").innerHTML = data.weather[0].description
+        document.getElementById("temp_min").innerHTML = data.main.temp_min
+        document.getElementById("humidity").innerHTML = data.main.humidity
+
+
         let icon = data.weather[0].icon;
         let iconUrl =`https://openweathermap.org/img/wn/${icon}@2x.png`;
         document.getElementById("icon").innerHTML = `<img src="${iconUrl}" alt="Icon">`;
